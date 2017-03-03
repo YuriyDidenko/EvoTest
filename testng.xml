@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+
+    <parameter name="model" value="samsung s7"/>
+    <parameter name="elementNumber" value="5"/>
+
+    <test name="FirefoxTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="EvoSearchTest">
+                <methods>
+                    <include name="testSearch"/>
+                </methods>
+            </class> <!-- EvoSearchTest -->
+        </classes>
+    </test> <!-- FirefoxTest -->
+
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="EvoSearchTest">
+                <methods>
+                    <include name="testSearch"/>
+                </methods>
+            </class> <!-- EvoSearchTest -->
+        </classes>
+    </test> <!-- ChromeTest -->
+
+</suite> <!-- Default Suite -->
