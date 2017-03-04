@@ -24,7 +24,7 @@ public abstract class Page {
         shopByCategoryButton.click();
     }
 
-    public void clickCellPhonesAndAccessoriesLink() {
+    public void openCellPhonesAndAccessoriesPage() {
         cellPhonesAndAccessoriesLink.click();
     }
 

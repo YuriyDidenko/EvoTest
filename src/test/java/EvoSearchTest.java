@@ -16,19 +16,22 @@ import java.util.List;
 
 public class EvoSearchTest {
 
+    private static final String CHROMEDRIVER_PATH = "D:/chromedriver.exe";
     private WebDriver driver;
+
     private MainPage mainPage;
     private CellPhonesPage cellPhonesPage;
     private SearchResultPage searchResultPage;
     private ProductPage productPage;
 
+
     @BeforeTest
     @Parameters("browser")
-    public void beforeTest(String browser) throws InvalidBrowserException{
+    public void beforeTest(String browser) throws InvalidBrowserException {
         if ("firefox".equalsIgnoreCase(browser)) {
             driver = new FirefoxDriver();
         } else if ("chrome".equalsIgnoreCase(browser)) {
-            System.setProperty("webdriver.chrome.driver", "D:/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", CHROMEDRIVER_PATH);
             driver = new ChromeDriver();
         } else {
             throw new InvalidBrowserException("Wrong parameter for browser.");
@@ -50,7 +53,7 @@ public class EvoSearchTest {
     public void testSearch(String model, int elementNumber) {
 
         mainPage.clickShopByCategoryButton();
-        mainPage.clickCellPhonesAndAccessoriesLink();
+        mainPage.openCellPhonesAndAccessoriesPage();
 
         cellPhonesPage.searchFor(model);
 
