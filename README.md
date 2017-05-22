@@ -1,6 +1,6 @@
-1. открыть www.ebay.com
-2. выбрать категорию "Cell phones & accessories" в списке "Shop by category"
-3. заполнить поле поиска поисковой фразой (н-р: "samsung s7") 
-4. нажать на кнопку поиска
-5. проверить, что отобразились результаты поиска
-6. открыть пятый найденный вариант и проверить что открылась верная страница
+1. open www.ebay.com
+2. choose the category "Cell phones & accessories" in list "Shop by category"
+3. fill the search field with some data (e.g. "samsung s7") 
+4. click the search button
+5. check the result is visible
+6. open fifth found element and check that correct page is showing
